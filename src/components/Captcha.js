@@ -6,6 +6,7 @@ const Captcha = ({ onValidate }) => {
   const [num2, setNum2] = useState(Math.floor(Math.random() * 10));
   const [userInput, setUserInput] = useState('');
 
+  
   useEffect(() => {
     // Refresh numbers on each mount
     setNum1(Math.floor(Math.random() * 10));
