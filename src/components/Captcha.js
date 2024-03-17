@@ -20,7 +20,7 @@ const Captcha = ({ onValidate }) => {
 
   return (
     <div>
-      <label htmlFor="captcha">Solve {num1} + {num2}: </label>
+      <label htmlFor="captcha">Lös {num1} + {num2}: </label>
       <input
         id="captcha"
         type="text"

@@ -61,7 +61,7 @@ class Valpar extends React.Component {
 	      handleSubmit = (e) => {
 		e.preventDefault();
 		if (!this.state.captchaValid) {
-		  alert('CAPTCHA is incorrect. Please try again.');
+		  alert('CAPTCHA är fel. Var snäl försök igen!');
 
 		  this.setState(prevState => ({ captchaKey: prevState.captchaKey + 1 }));
 		  return;
@@ -286,7 +286,7 @@ class Valpar extends React.Component {
 		value={this.state.presentation} onChange={this.handleInputChange}></textarea>
 
 		<Captcha key={this.state.captchaKey} onValidate={this.handleCaptchaValidation} />
-        	<button id='knapp' type="submit">Submit</button>
+        	<button id='knapp' type="submit">Skicka</button>
 
 	</form>
 </section>
