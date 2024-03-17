@@ -116,7 +116,7 @@ class Valpar extends React.Component {
 			captchaValid: false,
 		 });
 		 
-		alert('Form submitted successfully!');
+		alert('Form skickad korrekt!');
 	      };
 	render() {
 
