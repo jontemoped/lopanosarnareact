@@ -10,7 +10,7 @@ function FAQ({ question, answer }) {
       </button>
       {isOpen && <p className="faq-answer">{answer}</p>}
     </div>
-  );
+  );	
 }
 
 export default FAQ;

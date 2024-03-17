@@ -8,15 +8,14 @@ class Omoss extends React.Component {
 	render() {
 		const faqs = [
 			{
-			  question: "How do I contact you?",
-			  answer: "You can reach us via email at susanna@loparnosarna.se or by phone at 073-849 22 20."
+			  question: "Hur kontaktar jag dig?",
+			  answer: "Du kan nå mig via min email: susanna@loparnosarna.se eller på telefon: 073-849 22 20."
 			},
 			{
-			  question: "Where are you located?",
-			  answer: "Our address is Löparnäs 4, 936 91 BOLIDEN."
-			},
-			// Add more FAQs as needed
-		      ];
+			  question: "Var finns ni?",
+			  answer: "addressen är: Löparnäs 4, 936 91 BOLIDEN."
+			},	   
+		   ];
 		return (
 <div className="container">
 
@@ -95,7 +94,7 @@ class Omoss extends React.Component {
 	</p>
 </section>
 <section id="faq-section">
-          <h2 id="faqheader">Frequently Asked Questions</h2>
+          <h2 id="faqheader">Vanliga frågor</h2>
           {faqs.map((faq, index) => (
             <FAQ key={index} question={faq.question} answer={faq.answer} />
           ))}
