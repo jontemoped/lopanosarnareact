@@ -1,32 +1,22 @@
 import React from "react";
+import dogjump1 from './dogjump1.jpg';
+import dogjump2 from './dogjump2.jpg';
+import dogowner from './dogowner.jpg';
 
 class Home extends React.Component {
 	render() {
 		return (
-		<div class="container">
-		<header id="rubrik">
-			<h1>TjäderAndens Kennel</h1>
-			<h5>Golden retriever och finsk spets</h5>
-		</header>
-		<nav class="navigering">
-			<ul>
-				<li><a href="index.html">Meny</a></li>
-				<li><a href="hundar.html">Hundar</a></li>
-				<li><a href="valpar.html">Valpar</a></li>
-				<li><a href="kurser.html">Kurser</a></li>
-				<li><a href="omOss.html">Om oss</a></li>
-			</ul>
-		</nav>
+		<div className="container">
 		
-		<div class="länkar">
-			<div class="länk" id="styling">
+		<div className="länkar">
+			<div className="länk" id="styling">
 			<h2>
 			<a id="facebooklänk" href="https://www.facebook.com/profile.php?id=100091361044309" >
 				Vår Facebook
 			</a>
 			</h2>
 		</div>
-			<div class="länk" id="styling">
+			<div className="länk" id="styling">
 			<h2>
 			<a id="k9länk" href="https://www.k9data.com/">K9 databas för golden</a>
 			</h2>
@@ -34,8 +24,8 @@ class Home extends React.Component {
 		</div>
 		
 		<section id="tjaderandens_kennel">
-			<h2 class="styckerubrik">Tjäderandens kennel</h2>
-			<p class="infotext">På vår kennel finns det Golden Retriever av jakttyp och Finsk Spets. 
+			<h2 className="styckerubrik">Tjäderandens kennel</h2>
+			<p className="infotext">På vår kennel finns det Golden Retriever av jakttyp och Finsk Spets. 
 				Vi avlar på friska, mentalt starka och arbetssugna individer. 
 				<br/><br/>
 				Vår uppfödning är liten.
@@ -47,12 +37,12 @@ class Home extends React.Component {
 		</section>
 		
 		<aside id="hundbild1">
-			<img src="dogowner.jpg" alt="Bild på hund med ägare" id="hundägare" class="bild"/>
+			<img src={dogowner} alt="Bild på hund med ägare" id="hundägare" class="bild"/>
 		</aside>
 		
 		<section id="lopanosarna">
-			<h2 class="styckerubrik">lopanosarna</h2>
-			<p class="infotext" id="fadeBlock1">
+			<h2 className="styckerubrik">lopanosarna</h2>
+			<p className="infotext" id="fadeBlock1">
 				Är en lös samling av personer som gillar att träna med sina hundar. 
 				Det spelar ingen roll vad man vill träna eller på vilken nivå man är.<br/><br/>
 				Vi peppar och hjälper varandra, om någon vill prova något nytt så hjälps 
@@ -65,31 +55,14 @@ class Home extends React.Component {
 		</section>
 		
 		<aside id="hundhoppare">
-			<img src="dogjump1.jpg" alt="Bild på hoppande hund" id="hundhopp1" class="bild"/>
-			<img src="dogjump2.jpg" alt="Bild på hoppande hund" id="hundhopp2" class="bild"/>
+			<img src={dogjump1} alt="Bild på hoppande hund" id="hundhopp1" className="bild"/>
+			<img src={dogjump2} alt="Bild på hoppande hund" id="hundhopp2" className="bild"/>
 		</aside>
 		
-		<div id="extrasida" class="styling">
+		<div id="extrasida" className="styling">
 			<h2>
 			<a href="extrasida.html">Extrasida</a>
 			</h2>
-		</div>
-		
-		<footer id="menyfottext">
-			<p id="fottext">Sidan uppdaterades senast 2023-11-14</p>
-		</footer>
-		
-		<button class="länk" id="darkmode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-		
-		<button class="länk" id="backgroundimage" onclick="toggleBackgroundImage()">Toggle Background Image</button>
-		
-		<button class="toggle-info">Toggle Info</button>
-		<div class="info-content">
-			<section id="infocontent">
-				<h3 class="styckerubrik">Golden</h3>
-				<p class="infotext">En golden retriever är i grunden en apporterande fågelhund, <br/>
-					men är numera en utpräglad familjehund som är intelligent, social och lojal</p>
-			</section>
 		</div>
 		
 		</div>

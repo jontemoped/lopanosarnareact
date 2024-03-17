@@ -1,28 +1,19 @@
 import React from "react";
 
+import hundarmedpriser from './hundarmedpriser.jpg';
+import prispåbacken1 from './prispåbacken1.jpg';
+import prispåbacken2 from './prispåbacken2.jpg';
+
 class Kurser extends React.Component {
 	render() {
 		return (
-			<div class="container">
-			<header id="rubrik">
-				<h1>TjäderAndens Kennel</h1>
-				<h5>Golden retriever och finsk spets</h5>
-			</header>
-			<nav class="navigering">
-				<ul>
-					<li><a href="index.html">Meny</a></li>
-					<li><a href="hundar.html">Hundar</a></li>
-					<li><a href="valpar.html">Valpar</a></li>
-					<li><a href="kurser.html">Kurser</a></li>
-					<li><a href="omOss.html">Om oss</a></li>
-				</ul>
-			</nav>
+			<div className="container">
 			
-			<h2 id="kursutbud" class="sektionsrubrik">Kursutbud</h2>
+			<h2 id="kursutbud" className="sektionsrubrik">Kursutbud</h2>
 			
 			<section id="kurser">
-				<h3 id="lydnad" class="kursrubrik">Lydnad</h3>
-				<p class="infotext" id="lydnadtext">Valpkurs<br/>
+				<h3 id="lydnad" className="kursrubrik">Lydnad</h3>
+				<p className="infotext" id="lydnadtext">Valpkurs<br/>
 					Allmänlydnad/ Vardagslydnad<br/>
 					Lydnad fortsätter, i skog och mark<br/>
 					Lydnad fortsätter, tävlingslydnad<br/>
@@ -31,13 +22,13 @@ class Kurser extends React.Component {
 					Rallylydnad Nybörjare<br/>
 					Rallylydnad Fortsättning<br/><br/>
 				</p>
-				<h3 id="spårkurser" class="kursrubrik">Spårkurser</h3>
-				<p class="infotext" id="spårkurstext">Viltspår nybörjare/anlagsklass<br/>
+				<h3 id="spårkurser" className="kursrubrik">Spårkurser</h3>
+				<p className="infotext" id="spårkurstext">Viltspår nybörjare/anlagsklass<br/>
 					Viltspår öppenklass/fortsättning<br/>
 					Apellspår<br/><br/>
 				</p>
-				<h3 id="apport" class="kursrubrik">Apport/Jakt</h3>
-				<p class="infotext" id="apporttext">
+				<h3 id="apport" className="kursrubrik">Apport/Jakt</h3>
+				<p className="infotext" id="apporttext">
 					Apportering nybörjare<br/>
 					Apportering fortsättning<br/>
 					Working Test nybörjare<br/>
@@ -45,16 +36,16 @@ class Kurser extends React.Component {
 					Jaktkurs retriever grund<br/>
 					Jaktkurs retriever dirigering<br/><br/>
 				</p>
-				<h3 id="teoretiska" class="kursrubrik">Teoretiska</h3>
-				<p class="infotext" id="teoretiskatext">
+				<h3 id="teoretiska" className="kursrubrik">Teoretiska</h3>
+				<p className="infotext" id="teoretiskatext">
 					Hunduppfödar utbildning (SKK)<br/>
 					Tävlingspsykologi<br/>
 					Konditions och koordinations träning hund<br/>
 					Hundens anatomi och rörelser<br/>
 					Hundens Genetik, nedärvning och färger.<br/><br/>
 				</p>
-				<h3 id="special" class="kursrubrik">Special</h3>
-				<p class="infotext" id="specialtext">
+				<h3 id="special" className="kursrubrik">Special</h3>
+				<p className="infotext" id="specialtext">
 					Även kurser efter ert önskemål och skräddarsydda kurser för enskilda<br/> 
 					eller mindre grupper.
 					Kurserna hålls även som helgkurser med samma<br/> innehåll och antal studietimmar. 
@@ -71,22 +62,14 @@ class Kurser extends React.Component {
 			</section>
 			
 			<aside id="hundarmedpris">
-				<img src="hundarmedpriser.jpg" alt="två hundar med varsitt pris" id="hundarmedpriser" class="bild"/>
+				<img src={hundarmedpriser} alt="två hundar med varsitt pris" id="hundarmedpriser" className="bild"/>
 			</aside>
 			
 			<aside id="prispåbacken">
-				<img src="prispåbacken1.jpg" alt="Ässi med pris" id="prispåbacken1" class="bild"/>
-				<img src="prispåbacken2.jpg" alt="Bella med pris" id="prispåbacken2" class="bild"/>
+				<img src={prispåbacken1} alt="Ässi med pris" id="prispåbacken1" className="bild"/>
+				<img src={prispåbacken2} alt="Bella med pris" id="prispåbacken2" className="bild"/>
 			</aside>
-			
-			<button class="länk" id="darkmode" onclick="toggleDarkMode()">Toggle Dark Mode</button>
-			
-			<button class="länk" id="backgroundimage" onclick="toggleBackgroundImage()">Toggle Background Image</button>
-			
-			
-			<footer>
-				<p id="fottext">Sidan uppdaterades senast 2023-11-14</p>
-			</footer>
+		
 			</div>
 		)
 		
