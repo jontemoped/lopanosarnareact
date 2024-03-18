@@ -1,4 +1,7 @@
 import React from "react";
+
+import {NavLink} from "react-router-dom";
+
 import dogjump1 from './dogjump1.jpg';
 import dogjump2 from './dogjump2.jpg';
 import dogowner from './dogowner.jpg';
@@ -61,7 +64,7 @@ class Home extends React.Component {
 		
 		<div id="extrasida" className="styling">
 			<h2>
-			<a href="extrasida.html">Extrasida</a>
+				<NavLink to="/Extrasida">Extrasida</NavLink>
 			</h2>
 		</div>
 		
